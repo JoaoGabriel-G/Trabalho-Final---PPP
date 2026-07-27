@@ -59,7 +59,7 @@ public class MeuQuiz1_0 extends FrameworkQuiz{
                     jogador.mostrarMensagem("\n-> Resposta CORRETA! Você ganhou " + (1 * multiplicador()) + " ponto");
                     acertos[i]++;
                 } else if (pontosDaQuestao > 0.0 && pontosDaQuestao < 1.0) {
-                    jogador.mostrarMensagem("\n-> Resposta PARCIALMENTE CORRETA! Você ganhou " + (1 * multiplicador()) + " ponto");
+                    jogador.mostrarMensagem("\n-> Resposta PARCIALMENTE CORRETA! Você ganhou " + (pontosDaQuestao * multiplicador()) + " ponto");
                     acertosParciais[i]++;
                 } else {
                     jogador.mostrarMensagem("\n-> Resposta INCORRETA!");
